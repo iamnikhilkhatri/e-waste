@@ -225,3 +225,50 @@ body {
     right: 4px;
 
 }
+
+
+
+@media(max-width:890px){
+    .navbar{
+        flex-direction: column;
+    }
+    
+    .navbar ul li{
+        font-size: 1rem;
+    }
+
+    .sol{
+        overflow: hidden;
+        height: 120px;
+    width: 120px;
+    position: relative;
+    top: 27px;
+    }
+     
+    #home p{
+        font-size: 1.5rem;
+        padding: 31px;
+        text-align: justify;
+
+
+    }
+
+    #content .question h2{
+        font-size: 1.5rem;
+        width: 206px;
+
+    }
+    
+    .search{
+        display: flex;
+        align-items: center;
+        width: 314px;
+        justify-content: space-between;
+    }
+
+    #home{
+        height: 314px;
+
+    }
+
+}
