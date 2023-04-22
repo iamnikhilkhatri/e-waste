@@ -1,0 +1,227 @@
+/* General css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    width: 100%;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+.navbar::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+
+}
+.navbar ul {
+    display: flex;
+    font-family: 'Alkatra', cursive;
+}
+.navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+.navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+.navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+.navbar ul li a:active {
+    color: black;
+    background-color: white;
+}
+.logo {
+    font-size: 2.5rem;
+    color: aliceblue;
+    font-family: fantasy;
+    margin-left: 10px;
+
+}
+.search input {
+    width: 82px;
+    margin: 0px 12px;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+.search {
+    margin-right: 10px;
+
+}
+.search button {
+    height: 27px;
+}
+
+/* home section styling */
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    justify-content: center;
+    color: black;
+    padding-top: 12px;
+    position: relative;
+    background-color: white;
+}
+#home p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    color:black;
+
+}
+
+
+/* testimonial section styling */
+.basic-waste {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.basic-recyle{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+#basic{
+    text-align: center;
+    background-color: #ff4c68;;
+}
+
+
+
+/* content section styling */
+#content{
+    padding: 54px 34px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+}
+.sol{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: -32px;
+
+}
+#content .question h2{
+    color: black;
+    font-size: 3rem;
+}
+.answers{
+    margin-top: 12px;
+}
+#content .answers li{
+    color: black;
+    line-height: 2rem;
+    font-size: 1.5rem;
+
+}
+
+/* form section styling */
+#form {
+    border: 2px solid green;
+    display: flex;
+    background-color:#ff667d;;
+    height: 400px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.first{
+    padding: 62px;
+}
+.for{
+    border: 2px solid black;
+    padding: 12px;
+    width: 365px;
+    
+}
+
+.freq{
+    /* border: 2px solid black; */
+    padding: 12px;
+    width: 1230px;
+    
+}
+.question1{
+    padding: 12px 0px;
+    font-size:18px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    position: relative;
+}
+.question1::after{
+    content: "+";
+    position: absolute;
+    right: 4px;
+
+}
+.main-content{
+    margin: 12px 12px;
+}
+
+.answer1{
+    padding-top: 12px;
+    height: 0;
+    overflow: hidden;
+
+}
+
+/* footer section styling */
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.footer-img{
+    margin: 5px 3px;
+}
+
+
+/* javascript styling for frequently asked questions */
+.main-content.active .answer1{
+    height: 40px;
+}
+.main-content.active .question1{
+    padding: 12px 0px;
+    font-size:22px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    
+}
+.main-content.active .question1::after{
+    content: "-";
+    position: absolute;
+    right: 4px;
+
+}
