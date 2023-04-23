@@ -114,6 +114,18 @@ body {
     background-color: #ff4c68;;
 }
 
+.firsth1 h1{
+    font-size: 2rem;
+     line-height:1.5;
+}
+
+.basic-text{
+
+    font-size: 2rem;
+     line-height:1.5;
+}
+
+
 
 
 /* content section styling */
@@ -228,15 +240,14 @@ body {
 
 
 
-@media(max-width:890px){
-   
 
-   .navbar{
+@media(max-width:890px){
+    .navbar{
         flex-direction: column;
     }
     
     .navbar ul{
-        width: 258px;
+        width: 250px;
         align-items: center;
         padding-right: 2rem;
         justify-content: center;
@@ -248,5 +259,68 @@ body {
     .navbar ul li a{
         padding: 3px 12px;
     }
+   
 
+    .freq{
+        width: 250px;
+    }
+
+    #content{
+        height: 220px;
+    }
+
+    #content .answers li {
+        color: black;
+        line-height: 1rem;
+        font-size: .8rem;
+    }
+    #content .question h2{
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    .sol{
+        height: 94px;
+        width: 54px;
+        top: 86px;    
+    }
+   
+
+    #content {
+        padding: 40px 13px;
+    }
+
+    #home{
+        height: 229px;
+    }
+
+    #home h1{
+        font-size: 1.2rem;
+    }
+
+    #home p{
+        font-size: 1rem;
+        padding-top: 12px;
+    }
+
+    .basic-waste {
+        width: 54%;
+    }
+
+    .firsth1 h2{
+        font-size: 1.2rem;
+    }
+
+    .basic-recyle{
+        width: 54%;
+    }
+
+    .basic-text{
+        font-size: 1rem;
+            line-height: 1.5;
+    }
+
+    .first {
+        padding: 28px;
+    }
 }
